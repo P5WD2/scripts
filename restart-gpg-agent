@@ -1,0 +1,7 @@
+app=gpg-agent
+
+pgrep $app
+pkill $app
+$app --daemon --use-standard-socket
+pgrep $app
+
